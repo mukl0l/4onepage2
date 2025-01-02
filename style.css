@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('https://fonts.cdnfonts.com/css/orbitron-2');
+}
+
+body {
+    background-color: black;
+}
+
+.mainb {
+    margin-top: auto;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: row;
+}
+
+.section1 {
+    width: 50%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lefttop {
+    margin: 10px;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 100;
+    font-size: large;
+}
+
+.lefttop1 {
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Orbitron', sans-serif;
+    font-size: large;
+    font-weight: 100;
+    margin: 10px;
+}
+
+.image {
+    display: flex;
+    width: auto;
+    margin: 10px;
+}
+
+.textbox {
+    border: 1px solid orange;
+    border-radius: 10px;
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 100;
+    font-size: small;
+    color: aliceblue;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+p {
+    margin-left: 20px;
+    font-size: medium;
+}
+
+.footer {
+    text-align: right;
+    margin: 20px;
+}
+.lefttop2 {
+    height: 30%;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 100;
+    background-color: orange;
+    border-radius: 10px;
+    text-align: left;
+    font-size: medium;
+    margin: 5px;
+    background: linear-gradient(to right, orange, black);
+    color: aliceblue;
+}
+
+.leftbottom {
+    margin: 10px;
+    height: 440px;
+    display: flex;
+    flex-direction: row;
+}
+
+.section2 {
+    width: 50%;
+    margin: 40px;
+}
+
+.righttop {
+    height: 20%;
+}
+
+.warning-gif {
+    width: 400px;
+    height: 150px;
+    margin-left: 25%;
+}
+
+.rightmid {
+    border: 1px solid grey;
+    border-width: 4px;
+    border-radius: 5px;
+    height: 40%;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.giphy-webp {
+    width: 90%;
+    height: 90%;
+}
+
+
+
+.rightbottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-left: 15px;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .box {
+    width: 150px;
+    height: 150px;
+    background: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    border: 2px solid white;
+    position: relative;
+  }
+
+  .lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  #box1 {
+    font-size: 50px;
+    padding-top: 10px;
+  }
+  
+  #box2 {
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+
+  #box3 {
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+
+  #box4 {
+    font-size: 50px;
+    padding-top: 10px;
+  }
+
+  #box5 {
+    padding-bottom: 10px;
+  }
+
+  #box6 {
+    align-items: end;
+    padding-bottom: 10px;
+  }
+
+  #box7 {
+    align-items: end;
+    padding-bottom: 10px;
+  }
+
+  #box8 {
+    padding-bottom: 10px;
+  }
+
+
+
+  
+
+
+.scrolling-text {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: linear-gradient(to right, #111827, #1f2937);
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.scrolling-text p {
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.scrolling-text p::after {
+    content: attr(data-text);
+}
